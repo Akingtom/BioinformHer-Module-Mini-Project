@@ -1,5 +1,4 @@
-# 🧬 Tracking the Evolution of the Hemoglobin Beta (HBB) Gene Across Species 🐟🐄🐒
-
+# 🧬 Tracking the Evolution of the Hemoglobin Beta (HBB) Gene Across Species 🧑‍🦰🐟🐄🐒🐔🐁 
 ## 📝 Project Description  
 This project investigates the evolutionary conservation of the **Hemoglobin Beta (HBB) gene** across vertebrate species. The HBB gene encodes a critical subunit of hemoglobin, the protein responsible for oxygen transport in vertebrates. The study includes:  
 - 🧩 Sequence retrieval  
