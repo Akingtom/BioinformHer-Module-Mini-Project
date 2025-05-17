@@ -1,59 +1,58 @@
-Tracking the Evolution of the Hemoglobin Beta (HBB) Gene across Species
-Overview
-This repository contains the files, data, and analyses for tracking the evolutionary conservation of the Hemoglobin Beta (HBB) gene across various vertebrate species. The project investigates sequence conservation patterns, constructs phylogenetic relationships, and visualizes conserved amino acid patterns in this essential oxygen transport protein.
-Background
-Hemoglobin is a tetrameric protein responsible for oxygen transport in vertebrates, comprising two alpha (HBA) and two beta (HBB) globin subunits. The HBB protein contains a heme group that directly binds oxygen, with its functionality influenced by factors such as pH, carbon dioxide concentration, and allosteric effectors. Mutations in the HBB gene are associated with various hemoglobinopathies, including sickle cell disease and beta-thalassemia, highlighting the clinical significance of understanding evolutionary conservation patterns across species.
-Research Objectives
+# 🧬 Tracking the Evolution of the Hemoglobin Beta (HBB) Gene Across Species 🐟🐄🐒
 
-Characterize the sequence conservation of HBB across diverse vertebrate species
-Visualize conserved amino acid patterns using sequence logos
-Infer phylogenetic relationships among selected species based on HBB protein sequences
-Compare the derived phylogeny to accepted species relationships
+## 📝 Project Description  
+This project investigates the evolutionary conservation of the **Hemoglobin Beta (HBB) gene** across vertebrate species. The HBB gene encodes a critical subunit of hemoglobin, the protein responsible for oxygen transport in vertebrates. The study includes:  
+- 🧩 Sequence retrieval  
+- 🔍 Pairwise and multiple sequence alignments  
+- 🌳 Phylogenetic analysis  
+- 📊 Visualization of conserved motifs  
 
-Species Analyzed
+## 🔑 Key Findings  
+- **🧬 Sequence Conservation**: HBB shows high conservation in functional domains (e.g., heme-binding regions), with decreasing identity as evolutionary distance increases.  
+- **✨ Conserved Motifs**: Identified critical motifs (e.g., `YPWTQR`, `HCDKLHVDPENFR`) for heme binding and structural stability.  
+- **🌍 Phylogenetic Analysis**: Tree aligns with vertebrate relationships, highlighting strong purifying selection.  
+- **🏥 Clinical Relevance**: Pathogenic mutations (e.g., sickle cell disease) often occur at conserved residues.  
 
-Human (Homo sapiens, NP_000509.1)
-Chimpanzee (Pan troglodytes, XP_508242.1)
-Mouse (Mus musculus, NP_001265090.1)
-Cow (Bos taurus, NP_776342.1)
-Chicken (Gallus gallus, NP_990820.1)
-Zebrafish (Danio rerio, NP_001003431.2)
+## 📂 Files Included  
+1. **`HBB_MiniProject_TomilolaAkingbade.pdf`**: Full project report.  
+2. **`Figures/`**:  
+   - 🖼️ Pairwise alignments (Human vs. Chimpanzee, Human vs. Zebrafish).  
+   - 🧬 Multiple sequence alignment (MSA) of HBB proteins.  
+   - 📊 Sequence logo showing conservation patterns.  
+   - 🌳 Phylogenetic tree of HBB sequences.  
 
-Methods
+## 🛠️ Tools and Methods  
+- **🔎 Sequence Retrieval**: NCBI BLAST (`blastp`) using human HBB (`NP_000509.1`).  
+- **📏 Alignments**: NCBI BLAST Pairwise Alignment, **CLUSTAL O** for MSA.  
+- **🎨 Visualization**: Skylign for sequence logos.  
+- **🌳 Phylogenetics**: **MEGA X** (Neighbor-Joining, JTT model, 1000 bootstraps).  
 
-Sequence Retrieval: NCBI database using human sequence as query
-Pairwise Alignments: NCBI's BLAST Pairwise Alignment tool
-Multiple Sequence Alignment: CLUSTAL O (1.2.4)
-Sequence Logo Generation: Skylign web server
-Phylogenetic Analysis: MEGA X with Neighbor-Joining method and JTT amino acid substitution model
+## 🐾 Species Analyzed  
+| Species          | Common Name     | Accession Number     |
+|------------------|-----------------|----------------------|
+| *Homo sapiens*   | Human           | `NP_000509.1`        |
+| *Pan troglodytes*| Chimpanzee      | `XP_508242.1`        |
+| *Bos taurus*     | Cow             | `NP_776342.1`        |
+| *Mus musculus*   | Mouse           | `NP_001265090.1`     |
+| *Gallus gallus*  | Chicken         | `NP_990820.1`        |
+| *Danio rerio*    | Zebrafish       | `NP_001003431.2`     |
 
-Key Findings
+## 🔄 How to Reproduce  
+1. **Download** sequences from NCBI using the provided accession numbers.  
+2. **Align**: Use `BLAST` or `Clustal Omega` for pairwise/MSA.  
+3. **Visualize**: Upload MSA to **Skylign** for logos.  
+4. **Build Tree**: Run **MEGA X** (Settings: Neighbor-Joining, JTT model, 1000 bootstraps).  
 
-Identified highly conserved motifs critical for heme binding and oxygen coordination
-Demonstrated bimodal distribution of conservation scores reflecting different selective pressures
-Constructed phylogenetic tree largely recapitulating accepted vertebrate relationships
-Found strong correlation between evolutionary conservation and disease-causing mutations
+## 🚀 Future Directions  
+- 🌐 Expand taxonomic sampling (e.g., reptiles, amphibians).  
+- 🔄 Analyze the entire globin gene family for duplication events.  
+- 🏜️ Investigate lineage-specific adaptations (e.g., high-altitude species).  
 
-Repository Contents
+## 📬 Contact  
+**Tomilola Akingbade**  
+📧 victomilola@gmail.com
+  
 
-data/: Raw sequence files and alignment outputs
-scripts/: Analysis scripts for MSA and phylogenetic reconstruction
-results/: Generated tables, figures, and final alignments
-docs/: Project documentation and methodology details
-
-How to Use
-
-Clone this repository
-
-git clone https://github.com/yourusername/hbb-evolution.git
-
-Navigate to the project directory
-
-cd hbb-evolution
-
-Install required dependencies
-
-pip install -r requirements.txt
-
-Run analyses (see individual script documentation)
-
+---  
+**📜 License**: Open-source under [MIT License](LICENSE).  
+**🏷️ Keywords**: `HBB` | `hemoglobin` | `evolution` | `phylogenetics` | `sequence conservation`  
